@@ -148,7 +148,7 @@ async function checkOnce() {
     console.log('='.repeat(60));
 
     // Update state and determine which plans need notifications
-    state.lastCheckTime = timestamp;
+    state.lastCheckTime = new Date().toISOString();
     const plansToNotify: AvailabilityStatus[] = [];
     const historyRecords: HistoryRecord[] = [];
 
