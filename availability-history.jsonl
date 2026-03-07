@@ -887,3 +887,29 @@
 {"timestamp":"2026-03-07T19:26:00.385Z","floorPlanName":"Plan 3B","isAvailable":false,"unitCount":null,"price":null,"availabilityText":"Not Available"}
 {"timestamp":"2026-03-07T19:26:00.385Z","floorPlanName":"Plan 3D","isAvailable":false,"unitCount":null,"price":null,"availabilityText":"Not Available"}
 {"timestamp":"2026-03-07T19:26:00.385Z","floorPlanName":"Plan 3D Loft","isAvailable":false,"unitCount":null,"price":null,"availabilityText":"Not Available"}
+{"timestamp":"2026-03-07T19:43:36.273Z","floorPlanName":"Plan 1A","isAvailable":true,"unitCount":1,"price":null,"availabilityText":"1 Unit Available"}
+{"timestamp":"2026-03-07T19:43:36.273Z","floorPlanName":"Plan 1B","isAvailable":true,"unitCount":4,"price":null,"availabilityText":"4 Units Available"}
+{"timestamp":"2026-03-07T19:43:36.273Z","floorPlanName":"Plan 1Ba","isAvailable":true,"unitCount":1,"price":null,"availabilityText":"1 Unit Available"}
+{"timestamp":"2026-03-07T19:43:36.273Z","floorPlanName":"Plan 3A","isAvailable":true,"unitCount":1,"price":null,"availabilityText":"1 Unit Available"}
+{"timestamp":"2026-03-07T19:43:36.273Z","floorPlanName":"Plan SC","isAvailable":true,"unitCount":1,"price":null,"availabilityText":"1 Unit Available 03/27/2026"}
+{"timestamp":"2026-03-07T19:43:36.273Z","floorPlanName":"Plan 2G Loft","isAvailable":true,"unitCount":1,"price":null,"availabilityText":"1 Unit Available 04/13/2026"}
+{"timestamp":"2026-03-07T19:43:36.273Z","floorPlanName":"Plan 3C","isAvailable":true,"unitCount":1,"price":null,"availabilityText":"1 Unit Available 04/13/2026"}
+{"timestamp":"2026-03-07T19:43:36.273Z","floorPlanName":"Plan 1A Loft","isAvailable":false,"unitCount":null,"price":null,"availabilityText":"Not Available"}
+{"timestamp":"2026-03-07T19:43:36.273Z","floorPlanName":"Plan 1Aa Loft","isAvailable":false,"unitCount":null,"price":null,"availabilityText":"Not Available"}
+{"timestamp":"2026-03-07T19:43:36.273Z","floorPlanName":"Plan 1B Loft","isAvailable":false,"unitCount":null,"price":null,"availabilityText":"Not Available"}
+{"timestamp":"2026-03-07T19:43:36.273Z","floorPlanName":"Plan 1Ba Loft","isAvailable":false,"unitCount":null,"price":null,"availabilityText":"Not Available"}
+{"timestamp":"2026-03-07T19:43:36.273Z","floorPlanName":"Plan L/W B","isAvailable":false,"unitCount":null,"price":null,"availabilityText":"Not Available"}
+{"timestamp":"2026-03-07T19:43:36.274Z","floorPlanName":"Plan L/W C","isAvailable":false,"unitCount":null,"price":null,"availabilityText":"Not Available"}
+{"timestamp":"2026-03-07T19:43:36.274Z","floorPlanName":"Plan SA","isAvailable":false,"unitCount":null,"price":null,"availabilityText":"Not Available"}
+{"timestamp":"2026-03-07T19:43:36.274Z","floorPlanName":"Plan 2A","isAvailable":false,"unitCount":null,"price":null,"availabilityText":"Not Available"}
+{"timestamp":"2026-03-07T19:43:36.274Z","floorPlanName":"Plan 2A Loft","isAvailable":false,"unitCount":null,"price":null,"availabilityText":"Not Available"}
+{"timestamp":"2026-03-07T19:43:36.274Z","floorPlanName":"Plan 2B","isAvailable":false,"unitCount":null,"price":null,"availabilityText":"Not Available"}
+{"timestamp":"2026-03-07T19:43:36.274Z","floorPlanName":"Plan 2B Loft","isAvailable":false,"unitCount":null,"price":null,"availabilityText":"Not Available"}
+{"timestamp":"2026-03-07T19:43:36.274Z","floorPlanName":"Plan 2C","isAvailable":false,"unitCount":null,"price":null,"availabilityText":"Not Available"}
+{"timestamp":"2026-03-07T19:43:36.274Z","floorPlanName":"Plan 2D","isAvailable":false,"unitCount":null,"price":null,"availabilityText":"Not Available"}
+{"timestamp":"2026-03-07T19:43:36.274Z","floorPlanName":"Plan 2E","isAvailable":false,"unitCount":null,"price":null,"availabilityText":"Not Available"}
+{"timestamp":"2026-03-07T19:43:36.274Z","floorPlanName":"Plan 2F","isAvailable":false,"unitCount":null,"price":null,"availabilityText":"Not Available"}
+{"timestamp":"2026-03-07T19:43:36.274Z","floorPlanName":"Plan L/W A","isAvailable":false,"unitCount":null,"price":null,"availabilityText":"Not Available"}
+{"timestamp":"2026-03-07T19:43:36.274Z","floorPlanName":"Plan 3B","isAvailable":false,"unitCount":null,"price":null,"availabilityText":"Not Available"}
+{"timestamp":"2026-03-07T19:43:36.274Z","floorPlanName":"Plan 3D","isAvailable":false,"unitCount":null,"price":null,"availabilityText":"Not Available"}
+{"timestamp":"2026-03-07T19:43:36.274Z","floorPlanName":"Plan 3D Loft","isAvailable":false,"unitCount":null,"price":null,"availabilityText":"Not Available"}
