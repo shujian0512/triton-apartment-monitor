@@ -1,0 +1,556 @@
+{
+  "generatedAt": "2026-03-07T05:14:41.215Z",
+  "totalChecks": 30,
+  "dateRange": {
+    "start": "2026-03-07T05:08:06.456Z",
+    "end": "2026-03-07T05:14:41.212Z"
+  },
+  "floorPlans": {
+    "Plan 1A": {
+      "currentStatus": {
+        "isAvailable": true,
+        "unitCount": 1,
+        "price": null,
+        "availabilityText": "1 Unit Available",
+        "lastStatusChange": "2026-03-07T05:08:06.455Z"
+      },
+      "history": {
+        "totalChecks": 1,
+        "availabilityChanges": 0,
+        "averageUnitsWhenAvailable": 1,
+        "maxUnitsAvailable": 1,
+        "minUnitsAvailable": 1,
+        "priceHistory": {
+          "current": null,
+          "min": null,
+          "max": null
+        }
+      }
+    },
+    "Plan 1B": {
+      "currentStatus": {
+        "isAvailable": true,
+        "unitCount": 4,
+        "price": null,
+        "availabilityText": "4 Units Available",
+        "lastStatusChange": "03/06/2026, 21:02:16"
+      },
+      "history": {
+        "totalChecks": 1,
+        "availabilityChanges": 0,
+        "averageUnitsWhenAvailable": 4,
+        "maxUnitsAvailable": 4,
+        "minUnitsAvailable": 4,
+        "priceHistory": {
+          "current": null,
+          "min": null,
+          "max": null
+        }
+      }
+    },
+    "Plan 1Ba": {
+      "currentStatus": {
+        "isAvailable": true,
+        "unitCount": 1,
+        "price": null,
+        "availabilityText": "1 Unit Available",
+        "lastStatusChange": "2026-03-07T05:08:06.456Z"
+      },
+      "history": {
+        "totalChecks": 1,
+        "availabilityChanges": 0,
+        "averageUnitsWhenAvailable": 1,
+        "maxUnitsAvailable": 1,
+        "minUnitsAvailable": 1,
+        "priceHistory": {
+          "current": null,
+          "min": null,
+          "max": null
+        }
+      }
+    },
+    "Plan 3A": {
+      "currentStatus": {
+        "isAvailable": true,
+        "unitCount": 1,
+        "price": null,
+        "availabilityText": "1 Unit Available",
+        "lastStatusChange": "2026-03-07T05:08:06.456Z"
+      },
+      "history": {
+        "totalChecks": 1,
+        "availabilityChanges": 0,
+        "averageUnitsWhenAvailable": 1,
+        "maxUnitsAvailable": 1,
+        "minUnitsAvailable": 1,
+        "priceHistory": {
+          "current": null,
+          "min": null,
+          "max": null
+        }
+      }
+    },
+    "Plan SC": {
+      "currentStatus": {
+        "isAvailable": true,
+        "unitCount": 1,
+        "price": null,
+        "availabilityText": "1 Unit Available 03/27/2026",
+        "lastStatusChange": "2026-03-07T05:08:06.456Z"
+      },
+      "history": {
+        "totalChecks": 1,
+        "availabilityChanges": 0,
+        "averageUnitsWhenAvailable": 1,
+        "maxUnitsAvailable": 1,
+        "minUnitsAvailable": 1,
+        "priceHistory": {
+          "current": null,
+          "min": null,
+          "max": null
+        }
+      }
+    },
+    "Plan 2G Loft": {
+      "currentStatus": {
+        "isAvailable": true,
+        "unitCount": 1,
+        "price": null,
+        "availabilityText": "1 Unit Available 04/13/2026",
+        "lastStatusChange": "2026-03-07T05:08:06.456Z"
+      },
+      "history": {
+        "totalChecks": 1,
+        "availabilityChanges": 0,
+        "averageUnitsWhenAvailable": 1,
+        "maxUnitsAvailable": 1,
+        "minUnitsAvailable": 1,
+        "priceHistory": {
+          "current": null,
+          "min": null,
+          "max": null
+        }
+      }
+    },
+    "Plan 3C": {
+      "currentStatus": {
+        "isAvailable": true,
+        "unitCount": 1,
+        "price": null,
+        "availabilityText": "1 Unit Available 04/13/2026",
+        "lastStatusChange": "2026-03-07T05:08:06.456Z"
+      },
+      "history": {
+        "totalChecks": 1,
+        "availabilityChanges": 0,
+        "averageUnitsWhenAvailable": 1,
+        "maxUnitsAvailable": 1,
+        "minUnitsAvailable": 1,
+        "priceHistory": {
+          "current": null,
+          "min": null,
+          "max": null
+        }
+      }
+    },
+    "Plan 1A Loft": {
+      "currentStatus": {
+        "isAvailable": false,
+        "unitCount": null,
+        "price": null,
+        "availabilityText": "Not Available",
+        "lastStatusChange": "03/06/2026, 21:02:16"
+      },
+      "history": {
+        "totalChecks": 2,
+        "availabilityChanges": 0,
+        "averageUnitsWhenAvailable": null,
+        "maxUnitsAvailable": null,
+        "minUnitsAvailable": null,
+        "priceHistory": {
+          "current": null,
+          "min": null,
+          "max": null
+        }
+      }
+    },
+    "Plan 1Aa Loft": {
+      "currentStatus": {
+        "isAvailable": false,
+        "unitCount": null,
+        "price": null,
+        "availabilityText": "Not Available",
+        "lastStatusChange": "03/06/2026, 21:02:16"
+      },
+      "history": {
+        "totalChecks": 2,
+        "availabilityChanges": 0,
+        "averageUnitsWhenAvailable": null,
+        "maxUnitsAvailable": null,
+        "minUnitsAvailable": null,
+        "priceHistory": {
+          "current": null,
+          "min": null,
+          "max": null
+        }
+      }
+    },
+    "Plan 1B Loft": {
+      "currentStatus": {
+        "isAvailable": false,
+        "unitCount": null,
+        "price": null,
+        "availabilityText": "Not Available",
+        "lastStatusChange": "03/06/2026, 21:02:16"
+      },
+      "history": {
+        "totalChecks": 2,
+        "availabilityChanges": 0,
+        "averageUnitsWhenAvailable": null,
+        "maxUnitsAvailable": null,
+        "minUnitsAvailable": null,
+        "priceHistory": {
+          "current": null,
+          "min": null,
+          "max": null
+        }
+      }
+    },
+    "Plan 1Ba Loft": {
+      "currentStatus": {
+        "isAvailable": false,
+        "unitCount": null,
+        "price": null,
+        "availabilityText": "Not Available",
+        "lastStatusChange": "03/06/2026, 21:02:16"
+      },
+      "history": {
+        "totalChecks": 2,
+        "availabilityChanges": 0,
+        "averageUnitsWhenAvailable": null,
+        "maxUnitsAvailable": null,
+        "minUnitsAvailable": null,
+        "priceHistory": {
+          "current": null,
+          "min": null,
+          "max": null
+        }
+      }
+    },
+    "Plan L/W B": {
+      "currentStatus": {
+        "isAvailable": false,
+        "unitCount": null,
+        "price": null,
+        "availabilityText": "Not Available",
+        "lastStatusChange": "2026-03-07T05:08:06.456Z"
+      },
+      "history": {
+        "totalChecks": 1,
+        "availabilityChanges": 0,
+        "averageUnitsWhenAvailable": null,
+        "maxUnitsAvailable": null,
+        "minUnitsAvailable": null,
+        "priceHistory": {
+          "current": null,
+          "min": null,
+          "max": null
+        }
+      }
+    },
+    "Plan L/W C": {
+      "currentStatus": {
+        "isAvailable": false,
+        "unitCount": null,
+        "price": null,
+        "availabilityText": "Not Available",
+        "lastStatusChange": "2026-03-07T05:08:06.456Z"
+      },
+      "history": {
+        "totalChecks": 1,
+        "availabilityChanges": 0,
+        "averageUnitsWhenAvailable": null,
+        "maxUnitsAvailable": null,
+        "minUnitsAvailable": null,
+        "priceHistory": {
+          "current": null,
+          "min": null,
+          "max": null
+        }
+      }
+    },
+    "Plan SA": {
+      "currentStatus": {
+        "isAvailable": false,
+        "unitCount": null,
+        "price": null,
+        "availabilityText": "Not Available",
+        "lastStatusChange": "2026-03-07T05:08:06.456Z"
+      },
+      "history": {
+        "totalChecks": 1,
+        "availabilityChanges": 0,
+        "averageUnitsWhenAvailable": null,
+        "maxUnitsAvailable": null,
+        "minUnitsAvailable": null,
+        "priceHistory": {
+          "current": null,
+          "min": null,
+          "max": null
+        }
+      }
+    },
+    "Plan 2A": {
+      "currentStatus": {
+        "isAvailable": false,
+        "unitCount": null,
+        "price": null,
+        "availabilityText": "Not Available",
+        "lastStatusChange": "03/06/2026, 21:02:16"
+      },
+      "history": {
+        "totalChecks": 1,
+        "availabilityChanges": 0,
+        "averageUnitsWhenAvailable": null,
+        "maxUnitsAvailable": null,
+        "minUnitsAvailable": null,
+        "priceHistory": {
+          "current": null,
+          "min": null,
+          "max": null
+        }
+      }
+    },
+    "Plan 2A Loft": {
+      "currentStatus": {
+        "isAvailable": false,
+        "unitCount": null,
+        "price": null,
+        "availabilityText": "Not Available",
+        "lastStatusChange": "2026-03-07T05:08:06.456Z"
+      },
+      "history": {
+        "totalChecks": 1,
+        "availabilityChanges": 0,
+        "averageUnitsWhenAvailable": null,
+        "maxUnitsAvailable": null,
+        "minUnitsAvailable": null,
+        "priceHistory": {
+          "current": null,
+          "min": null,
+          "max": null
+        }
+      }
+    },
+    "Plan 2B": {
+      "currentStatus": {
+        "isAvailable": false,
+        "unitCount": null,
+        "price": null,
+        "availabilityText": "Not Available",
+        "lastStatusChange": "2026-03-07T05:08:06.456Z"
+      },
+      "history": {
+        "totalChecks": 1,
+        "availabilityChanges": 0,
+        "averageUnitsWhenAvailable": null,
+        "maxUnitsAvailable": null,
+        "minUnitsAvailable": null,
+        "priceHistory": {
+          "current": null,
+          "min": null,
+          "max": null
+        }
+      }
+    },
+    "Plan 2B Loft": {
+      "currentStatus": {
+        "isAvailable": false,
+        "unitCount": null,
+        "price": null,
+        "availabilityText": "Not Available",
+        "lastStatusChange": "2026-03-07T05:08:06.456Z"
+      },
+      "history": {
+        "totalChecks": 1,
+        "availabilityChanges": 0,
+        "averageUnitsWhenAvailable": null,
+        "maxUnitsAvailable": null,
+        "minUnitsAvailable": null,
+        "priceHistory": {
+          "current": null,
+          "min": null,
+          "max": null
+        }
+      }
+    },
+    "Plan 2C": {
+      "currentStatus": {
+        "isAvailable": false,
+        "unitCount": null,
+        "price": null,
+        "availabilityText": "Not Available",
+        "lastStatusChange": "2026-03-07T05:08:06.456Z"
+      },
+      "history": {
+        "totalChecks": 1,
+        "availabilityChanges": 0,
+        "averageUnitsWhenAvailable": null,
+        "maxUnitsAvailable": null,
+        "minUnitsAvailable": null,
+        "priceHistory": {
+          "current": null,
+          "min": null,
+          "max": null
+        }
+      }
+    },
+    "Plan 2D": {
+      "currentStatus": {
+        "isAvailable": false,
+        "unitCount": null,
+        "price": null,
+        "availabilityText": "Not Available",
+        "lastStatusChange": "2026-03-07T05:08:06.456Z"
+      },
+      "history": {
+        "totalChecks": 1,
+        "availabilityChanges": 0,
+        "averageUnitsWhenAvailable": null,
+        "maxUnitsAvailable": null,
+        "minUnitsAvailable": null,
+        "priceHistory": {
+          "current": null,
+          "min": null,
+          "max": null
+        }
+      }
+    },
+    "Plan 2E": {
+      "currentStatus": {
+        "isAvailable": false,
+        "unitCount": null,
+        "price": null,
+        "availabilityText": "Not Available",
+        "lastStatusChange": "2026-03-07T05:08:06.456Z"
+      },
+      "history": {
+        "totalChecks": 1,
+        "availabilityChanges": 0,
+        "averageUnitsWhenAvailable": null,
+        "maxUnitsAvailable": null,
+        "minUnitsAvailable": null,
+        "priceHistory": {
+          "current": null,
+          "min": null,
+          "max": null
+        }
+      }
+    },
+    "Plan 2F": {
+      "currentStatus": {
+        "isAvailable": false,
+        "unitCount": null,
+        "price": null,
+        "availabilityText": "Not Available",
+        "lastStatusChange": "2026-03-07T05:08:06.456Z"
+      },
+      "history": {
+        "totalChecks": 1,
+        "availabilityChanges": 0,
+        "averageUnitsWhenAvailable": null,
+        "maxUnitsAvailable": null,
+        "minUnitsAvailable": null,
+        "priceHistory": {
+          "current": null,
+          "min": null,
+          "max": null
+        }
+      }
+    },
+    "Plan L/W A": {
+      "currentStatus": {
+        "isAvailable": false,
+        "unitCount": null,
+        "price": null,
+        "availabilityText": "Not Available",
+        "lastStatusChange": "2026-03-07T05:08:06.456Z"
+      },
+      "history": {
+        "totalChecks": 1,
+        "availabilityChanges": 0,
+        "averageUnitsWhenAvailable": null,
+        "maxUnitsAvailable": null,
+        "minUnitsAvailable": null,
+        "priceHistory": {
+          "current": null,
+          "min": null,
+          "max": null
+        }
+      }
+    },
+    "Plan 3B": {
+      "currentStatus": {
+        "isAvailable": false,
+        "unitCount": null,
+        "price": null,
+        "availabilityText": "Not Available",
+        "lastStatusChange": "2026-03-07T05:08:06.456Z"
+      },
+      "history": {
+        "totalChecks": 1,
+        "availabilityChanges": 0,
+        "averageUnitsWhenAvailable": null,
+        "maxUnitsAvailable": null,
+        "minUnitsAvailable": null,
+        "priceHistory": {
+          "current": null,
+          "min": null,
+          "max": null
+        }
+      }
+    },
+    "Plan 3D": {
+      "currentStatus": {
+        "isAvailable": false,
+        "unitCount": null,
+        "price": null,
+        "availabilityText": "Not Available",
+        "lastStatusChange": "2026-03-07T05:08:06.456Z"
+      },
+      "history": {
+        "totalChecks": 1,
+        "availabilityChanges": 0,
+        "averageUnitsWhenAvailable": null,
+        "maxUnitsAvailable": null,
+        "minUnitsAvailable": null,
+        "priceHistory": {
+          "current": null,
+          "min": null,
+          "max": null
+        }
+      }
+    },
+    "Plan 3D Loft": {
+      "currentStatus": {
+        "isAvailable": false,
+        "unitCount": null,
+        "price": null,
+        "availabilityText": "Not Available",
+        "lastStatusChange": "2026-03-07T05:08:06.456Z"
+      },
+      "history": {
+        "totalChecks": 1,
+        "availabilityChanges": 0,
+        "averageUnitsWhenAvailable": null,
+        "maxUnitsAvailable": null,
+        "minUnitsAvailable": null,
+        "priceHistory": {
+          "current": null,
+          "min": null,
+          "max": null
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apartment Availability Dashboard</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .header {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+
+    .header h1 {
+      color: #333;
+      margin-bottom: 10px;
+      font-size: 2em;
+    }
+
+    .header p {
+      color: #666;
+      font-size: 0.95em;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .stat-card {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .stat-card h3 {
+      color: #666;
+      font-size: 0.9em;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+    }
+
+    .stat-card .value {
+      font-size: 2.5em;
+      font-weight: bold;
+      color: #667eea;
+    }
+
+    .charts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+      gap: 20px;
+      margin-bottom: 20px;
+    }
+
+    .chart-card {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .chart-card h2 {
+      color: #333;
+      margin-bottom: 20px;
+      font-size: 1.3em;
+    }
+
+    .chart-container {
+      position: relative;
+      height: 300px;
+    }
+
+    .table-card {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .table-card h2 {
+      color: #333;
+      margin-bottom: 20px;
+      font-size: 1.3em;
+    }
+
+    .search-filter {
+      margin-bottom: 15px;
+    }
+
+    .search-filter input {
+      width: 100%;
+      padding: 10px 15px;
+      border: 2px solid #e0e0e0;
+      border-radius: 5px;
+      font-size: 1em;
+      transition: border-color 0.3s;
+    }
+
+    .search-filter input:focus {
+      outline: none;
+      border-color: #667eea;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    thead {
+      background: #f5f5f5;
+    }
+
+    th, td {
+      padding: 12px 15px;
+      text-align: left;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    th {
+      font-weight: 600;
+      color: #333;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    th:hover {
+      background: #e8e8e8;
+    }
+
+    .available {
+      color: #10b981;
+      font-weight: 600;
+    }
+
+    .unavailable {
+      color: #ef4444;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 0.85em;
+      font-weight: 600;
+    }
+
+    .badge.available {
+      background: #d1fae5;
+      color: #065f46;
+    }
+
+    .badge.unavailable {
+      background: #fee2e2;
+      color: #991b1b;
+    }
+
+    .footer {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      color: #666;
+      font-size: 0.9em;
+      margin-top: 20px;
+    }
+
+    @media (max-width: 768px) {
+      .charts {
+        grid-template-columns: 1fr;
+      }
+
+      .chart-container {
+        height: 250px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>🏠 Apartment Availability Dashboard</h1>
+      <p>Last updated: Friday, March 6, 2026 at 9:07 PM PT</p>
+    </div>
+
+    <div class="stats">
+      <div class="stat-card">
+        <h3>Total Plans</h3>
+        <div class="value">26</div>
+      </div>
+      <div class="stat-card">
+        <h3>Available</h3>
+        <div class="value" style="color: #10b981;">7</div>
+      </div>
+      <div class="stat-card">
+        <h3>Unavailable</h3>
+        <div class="value" style="color: #ef4444;">19</div>
+      </div>
+      <div class="stat-card">
+        <h3>Notifications Sent</h3>
+        <div class="value" style="color: #f59e0b;">2</div>
+      </div>
+    </div>
+
+    <div class="charts">
+      <div class="chart-card">
+        <h2>📈 Availability Timeline (7 Days)</h2>
+        <div class="chart-container">
+          <canvas id="availabilityChart"></canvas>
+        </div>
+      </div>
+
+      <div class="chart-card">
+        <h2>📊 Available Units by Plan</h2>
+        <div class="chart-container">
+          <canvas id="unitCountChart"></canvas>
+        </div>
+      </div>
+
+      <div class="chart-card">
+        <h2>🔄 Most Volatile Plans</h2>
+        <div class="chart-container">
+          <canvas id="statusChangesChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="table-card">
+      <h2>📋 All Floor Plans</h2>
+      <div class="search-filter">
+        <input type="text" id="searchInput" placeholder="Search floor plans...">
+      </div>
+      <table id="plansTable">
+        <thead>
+          <tr>
+            <th onclick="sortTable(0)">Floor Plan ↕</th>
+            <th onclick="sortTable(1)">Status ↕</th>
+            <th onclick="sortTable(2)">Units ↕</th>
+            <th onclick="sortTable(3)">Details ↕</th>
+            <th onclick="sortTable(4)">Last Changed ↕</th>
+          </tr>
+        </thead>
+        <tbody id="plansTableBody">
+          
+            <tr>
+              <td><strong>Plan 1A</strong></td>
+              <td>
+                <span class="badge available">
+                  ✓ Available
+                </span>
+              </td>
+              <td>1</td>
+              <td>1 Unit Available</td>
+              <td>03/06, 09:08 PM</td>
+            </tr>
+          
+            <tr>
+              <td><strong>Plan 1B</strong></td>
+              <td>
+                <span class="badge available">
+                  ✓ Available
+                </span>
+              </td>
+              <td>4</td>
+              <td>4 Units Available</td>
+              <td>03/06, 09:02 PM</td>
+            </tr>
+          
+            <tr>
+              <td><strong>Plan 1Ba</strong></td>
+              <td>
+                <span class="badge available">
+                  ✓ Available
+                </span>
+              </td>
+              <td>1</td>
+              <td>1 Unit Available</td>
+              <td>03/06, 09:08 PM</td>
+            </tr>
+          
+            <tr>
+              <td><strong>Plan 2G Loft</strong></td>
+              <td>
+                <span class="badge available">
+                  ✓ Available
+                </span>
+              </td>
+              <td>1</td>
+              <td>1 Unit Available 04/13/2026</td>
+              <td>03/06, 09:08 PM</td>
+            </tr>
+          
+            <tr>
+              <td><strong>Plan 3A</strong></td>
+              <td>
+                <span class="badge available">
+                  ✓ Available
+                </span>
+              </td>
+              <td>1</td>
+              <td>1 Unit Available</td>
+              <td>03/06, 09:08 PM</td>
+            </tr>
+          
+            <tr>
+              <td><strong>Plan 3C</strong></td>
+              <td>
+                <span class="badge available">
+                  ✓ Available
+                </span>
+              </td>
+              <td>1</td>
+              <td>1 Unit Available 04/13/2026</td>
+              <td>03/06, 09:08 PM</td>
+            </tr>
+          
+            <tr>
+              <td><strong>Plan SC</strong></td>
+              <td>
+                <span class="badge available">
+                  ✓ Available
+                </span>
+              </td>
+              <td>1</td>
+              <td>1 Unit Available 03/27/2026</td>
+              <td>03/06, 09:08 PM</td>
+            </tr>
+          
+            <tr>
+              <td><strong>Plan 1A Loft</strong></td>
+              <td>
+                <span class="badge unavailable">
+                  ✗ Unavailable
+                </span>
+              </td>
+              <td>-</td>
+              <td>Not Available</td>
+              <td>03/06, 09:02 PM</td>
+            </tr>
+          
+            <tr>
+              <td><strong>Plan 1Aa Loft</strong></td>
+              <td>
+                <span class="badge unavailable">
+                  ✗ Unavailable
+                </span>
+              </td>
+              <td>-</td>
+              <td>Not Available</td>
+              <td>03/06, 09:02 PM</td>
+            </tr>
+          
+            <tr>
+              <td><strong>Plan 1B Loft</strong></td>
+              <td>
+                <span class="badge unavailable">
+                  ✗ Unavailable
+                </span>
+              </td>
+              <td>-</td>
+              <td>Not Available</td>
+              <td>03/06, 09:02 PM</td>
+            </tr>
+          
+            <tr>
+              <td><strong>Plan 1Ba Loft</strong></td>
+              <td>
+                <span class="badge unavailable">
+                  ✗ Unavailable
+                </span>
+              </td>
+              <td>-</td>
+              <td>Not Available</td>
+              <td>03/06, 09:02 PM</td>
+            </tr>
+          
+            <tr>
+              <td><strong>Plan 2A</strong></td>
+              <td>
+                <span class="badge unavailable">
+                  ✗ Unavailable
+                </span>
+              </td>
+              <td>-</td>
+              <td>Not Available</td>
+              <td>03/06, 09:02 PM</td>
+            </tr>
+          
+            <tr>
+              <td><strong>Plan 2A Loft</strong></td>
+              <td>
+                <span class="badge unavailable">
+                  ✗ Unavailable
+                </span>
+              </td>
+              <td>-</td>
+              <td>Not Available</td>
+              <td>03/06, 09:08 PM</td>
+            </tr>
+          
+            <tr>
+              <td><strong>Plan 2B</strong></td>
+              <td>
+                <span class="badge unavailable">
+                  ✗ Unavailable
+                </span>
+              </td>
+              <td>-</td>
+              <td>Not Available</td>
+              <td>03/06, 09:08 PM</td>
+            </tr>
+          
+            <tr>
+              <td><strong>Plan 2B Loft</strong></td>
+              <td>
+                <span class="badge unavailable">
+                  ✗ Unavailable
+                </span>
+              </td>
+              <td>-</td>
+              <td>Not Available</td>
+              <td>03/06, 09:08 PM</td>
+            </tr>
+          
+            <tr>
+              <td><strong>Plan 2C</strong></td>
+              <td>
+                <span class="badge unavailable">
+                  ✗ Unavailable
+                </span>
+              </td>
+              <td>-</td>
+              <td>Not Available</td>
+              <td>03/06, 09:08 PM</td>
+            </tr>
+          
+            <tr>
+              <td><strong>Plan 2D</strong></td>
+              <td>
+                <span class="badge unavailable">
+                  ✗ Unavailable
+                </span>
+              </td>
+              <td>-</td>
+              <td>Not Available</td>
+              <td>03/06, 09:08 PM</td>
+            </tr>
+          
+            <tr>
+              <td><strong>Plan 2E</strong></td>
+              <td>
+                <span class="badge unavailable">
+                  ✗ Unavailable
+                </span>
+              </td>
+              <td>-</td>
+              <td>Not Available</td>
+              <td>03/06, 09:08 PM</td>
+            </tr>
+          
+            <tr>
+              <td><strong>Plan 2F</strong></td>
+              <td>
+                <span class="badge unavailable">
+                  ✗ Unavailable
+                </span>
+              </td>
+              <td>-</td>
+              <td>Not Available</td>
+              <td>03/06, 09:08 PM</td>
+            </tr>
+          
+            <tr>
+              <td><strong>Plan 3B</strong></td>
+              <td>
+                <span class="badge unavailable">
+                  ✗ Unavailable
+                </span>
+              </td>
+              <td>-</td>
+              <td>Not Available</td>
+              <td>03/06, 09:08 PM</td>
+            </tr>
+          
+            <tr>
+              <td><strong>Plan 3D</strong></td>
+              <td>
+                <span class="badge unavailable">
+                  ✗ Unavailable
+                </span>
+              </td>
+              <td>-</td>
+              <td>Not Available</td>
+              <td>03/06, 09:08 PM</td>
+            </tr>
+          
+            <tr>
+              <td><strong>Plan 3D Loft</strong></td>
+              <td>
+                <span class="badge unavailable">
+                  ✗ Unavailable
+                </span>
+              </td>
+              <td>-</td>
+              <td>Not Available</td>
+              <td>03/06, 09:08 PM</td>
+            </tr>
+          
+            <tr>
+              <td><strong>Plan L/W A</strong></td>
+              <td>
+                <span class="badge unavailable">
+                  ✗ Unavailable
+                </span>
+              </td>
+              <td>-</td>
+              <td>Not Available</td>
+              <td>03/06, 09:08 PM</td>
+            </tr>
+          
+            <tr>
+              <td><strong>Plan L/W B</strong></td>
+              <td>
+                <span class="badge unavailable">
+                  ✗ Unavailable
+                </span>
+              </td>
+              <td>-</td>
+              <td>Not Available</td>
+              <td>03/06, 09:08 PM</td>
+            </tr>
+          
+            <tr>
+              <td><strong>Plan L/W C</strong></td>
+              <td>
+                <span class="badge unavailable">
+                  ✗ Unavailable
+                </span>
+              </td>
+              <td>-</td>
+              <td>Not Available</td>
+              <td>03/06, 09:08 PM</td>
+            </tr>
+          
+            <tr>
+              <td><strong>Plan SA</strong></td>
+              <td>
+                <span class="badge unavailable">
+                  ✗ Unavailable
+                </span>
+              </td>
+              <td>-</td>
+              <td>Not Available</td>
+              <td>03/06, 09:08 PM</td>
+            </tr>
+          
+        </tbody>
+      </table>
+    </div>
+
+    <div class="footer">
+      <p>🤖 Generated by Apartment Availability Monitor | Data updates every 30 minutes</p>
+    </div>
+  </div>
+
+  <script>
+    // Chart data
+    const chartData = {"availabilityTimeline":{"labels":["03/06"],"datasets":[{"label":"Plan 1A","data":[1],"borderColor":"rgb(75, 192, 192)","backgroundColor":"rgba(75, 192, 192, 0.2)"},{"label":"Plan 1B","data":[1],"borderColor":"rgb(255, 99, 132)","backgroundColor":"rgba(255, 99, 132, 0.2)"},{"label":"Plan 1Ba","data":[1],"borderColor":"rgb(54, 162, 235)","backgroundColor":"rgba(54, 162, 235, 0.2)"},{"label":"Plan 3A","data":[1],"borderColor":"rgb(255, 206, 86)","backgroundColor":"rgba(255, 206, 86, 0.2)"},{"label":"Plan SC","data":[1],"borderColor":"rgb(153, 102, 255)","backgroundColor":"rgba(153, 102, 255, 0.2)"}]},"unitCountDistribution":{"labels":["Plan 1A","Plan 1B","Plan 1Ba","Plan 2G Loft","Plan 3A","Plan 3C","Plan SC"],"data":[1,4,1,1,1,1,1]},"statusChanges":{"labels":[],"data":[]}};
+
+    // Availability Timeline Chart
+    new Chart(document.getElementById('availabilityChart'), {
+      type: 'line',
+      data: chartData.availabilityTimeline,
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        plugins: {
+          legend: {
+            position: 'bottom',
+          },
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            ticks: {
+              stepSize: 1
+            }
+          }
+        }
+      }
+    });
+
+    // Unit Count Chart
+    if (chartData.unitCountDistribution.data.length > 0) {
+      new Chart(document.getElementById('unitCountChart'), {
+        type: 'bar',
+        data: {
+          labels: chartData.unitCountDistribution.labels,
+          datasets: [{
+            label: 'Units Available',
+            data: chartData.unitCountDistribution.data,
+            backgroundColor: 'rgba(75, 192, 192, 0.6)',
+            borderColor: 'rgb(75, 192, 192)',
+            borderWidth: 2
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          plugins: {
+            legend: {
+              display: false
+            }
+          },
+          scales: {
+            y: {
+              beginAtZero: true,
+              ticks: {
+                stepSize: 1
+              }
+            }
+          }
+        }
+      });
+    } else {
+      document.getElementById('unitCountChart').parentElement.innerHTML = '<p style="text-align: center; color: #999; padding: 50px;">No available units to display</p>';
+    }
+
+    // Status Changes Chart
+    if (chartData.statusChanges.data.length > 0) {
+      new Chart(document.getElementById('statusChangesChart'), {
+        type: 'bar',
+        data: {
+          labels: chartData.statusChanges.labels,
+          datasets: [{
+            label: 'Status Changes',
+            data: chartData.statusChanges.data,
+            backgroundColor: 'rgba(255, 99, 132, 0.6)',
+            borderColor: 'rgb(255, 99, 132)',
+            borderWidth: 2
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: false,
+          indexAxis: 'y',
+          plugins: {
+            legend: {
+              display: false
+            }
+          },
+          scales: {
+            x: {
+              beginAtZero: true,
+              ticks: {
+                stepSize: 1
+              }
+            }
+          }
+        }
+      });
+    } else {
+      document.getElementById('statusChangesChart').parentElement.innerHTML = '<p style="text-align: center; color: #999; padding: 50px;">No status changes yet</p>';
+    }
+
+    // Table search
+    document.getElementById('searchInput').addEventListener('keyup', function() {
+      const filter = this.value.toLowerCase();
+      const rows = document.querySelectorAll('#plansTableBody tr');
+
+      rows.forEach(row => {
+        const text = row.textContent.toLowerCase();
+        row.style.display = text.includes(filter) ? '' : 'none';
+      });
+    });
+
+    // Table sorting
+    function sortTable(columnIndex) {
+      const table = document.getElementById('plansTable');
+      const tbody = table.querySelector('tbody');
+      const rows = Array.from(tbody.querySelectorAll('tr'));
+
+      rows.sort((a, b) => {
+        const aValue = a.cells[columnIndex].textContent.trim();
+        const bValue = b.cells[columnIndex].textContent.trim();
+
+        // Try numeric sort first
+        const aNum = parseFloat(aValue);
+        const bNum = parseFloat(bValue);
+
+        if (!isNaN(aNum) && !isNaN(bNum)) {
+          return aNum - bNum;
+        }
+
+        return aValue.localeCompare(bValue);
+      });
+
+      tbody.innerHTML = '';
+      rows.forEach(row => tbody.appendChild(row));
+    }
+  </script>
+</body>
+</html>

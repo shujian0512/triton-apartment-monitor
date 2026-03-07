@@ -1,0 +1,89 @@
+name: Apartment Availability Monitor
+
+on:
+  # Run every 30 minutes
+  schedule:
+    - cron: '*/30 * * * *'
+
+  # Allow manual trigger from GitHub UI
+  workflow_dispatch:
+
+  # Run on push to main (for testing)
+  push:
+    branches:
+      - main
+
+jobs:
+  check-availability:
+    runs-on: ubuntu-latest
+    environment: prod
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Puppeteer dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y \
+            libnss3 \
+            libatk1.0-0 \
+            libatk-bridge2.0-0 \
+            libcups2 \
+            libdrm2 \
+            libxkbcommon0 \
+            libxcomposite1 \
+            libxdamage1 \
+            libxfixes3 \
+            libxrandr2 \
+            libgbm1 \
+            libasound2t64 || sudo apt-get install -y libasound2
+
+      - name: Build TypeScript
+        run: npm run build
+
+      - name: Create .env file from secrets
+        run: |
+          cat << EOF > .env
+          APARTMENT_URL=${{ secrets.APARTMENT_URL }}
+          TRACK_FLOOR_PLANS=${{ secrets.TRACK_FLOOR_PLANS || secrets.FLOOR_PLAN_NAMES || '*' }}
+          NOTIFY_FLOOR_PLANS=${{ secrets.NOTIFY_FLOOR_PLANS || secrets.FLOOR_PLAN_NAMES || 'Plan 1B, Plan 2A' }}
+          AVAILABILITY_TEXT=${{ secrets.AVAILABILITY_TEXT }}
+          SMTP_HOST=${{ secrets.SMTP_HOST }}
+          SMTP_PORT=${{ secrets.SMTP_PORT }}
+          SMTP_SECURE=${{ secrets.SMTP_SECURE }}
+          SMTP_USER=${{ secrets.SMTP_USER }}
+          SMTP_PASS=${{ secrets.SMTP_PASS }}
+          EMAIL_FROM=${{ secrets.EMAIL_FROM }}
+          EMAIL_TO=${{ secrets.EMAIL_TO }}
+          TWILIO_ACCOUNT_SID=${{ secrets.TWILIO_ACCOUNT_SID }}
+          TWILIO_AUTH_TOKEN=${{ secrets.TWILIO_AUTH_TOKEN }}
+          TWILIO_PHONE_FROM=${{ secrets.TWILIO_PHONE_FROM }}
+          TWILIO_PHONE_TO=${{ secrets.TWILIO_PHONE_TO }}
+          CHECK_INTERVAL_MINUTES=30
+          REQUEST_DELAY_MS=2000
+          HISTORY_RETENTION_DAYS=${{ secrets.HISTORY_RETENTION_DAYS || '90' }}
+          EOF
+
+      - name: Run availability check
+        run: node dist/check-once.js
+        env:
+          PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: 'false'
+
+      - name: Commit state and history changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add state.json availability-history.jsonl availability-summary.json dashboard.html || true
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update availability state and history [skip ci]" && git push)
