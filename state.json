@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "lastCheckTime": "03/06/2026, 22:52:08",
+  "lastCheckTime": "03/06/2026, 22:59:41",
   "notificationCount": 2,
   "floorPlans": {
     "Plan 1B": {
@@ -64,7 +64,7 @@
       "price": null,
       "availabilityText": "1 Unit Available",
       "lastStatusChange": "2026-03-07T05:08:06.455Z",
-      "lastChecked": "2026-03-07T06:52:16.912Z"
+      "lastChecked": "2026-03-07T06:59:51.399Z"
     },
     "Plan 1Ba": {
       "floorPlanName": "Plan 1Ba",

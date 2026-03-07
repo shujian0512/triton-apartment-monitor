@@ -132,3 +132,4 @@
 {"timestamp":"2026-03-07T06:52:16.913Z","floorPlanName":"Plan 3B","isAvailable":false,"unitCount":null,"price":null,"availabilityText":"Not Available"}
 {"timestamp":"2026-03-07T06:52:16.913Z","floorPlanName":"Plan 3D","isAvailable":false,"unitCount":null,"price":null,"availabilityText":"Not Available"}
 {"timestamp":"2026-03-07T06:52:16.913Z","floorPlanName":"Plan 3D Loft","isAvailable":false,"unitCount":null,"price":null,"availabilityText":"Not Available"}
+{"timestamp":"2026-03-07T06:59:51.399Z","floorPlanName":"Plan 1A","isAvailable":true,"unitCount":1,"price":null,"availabilityText":"1 Unit Available"}
