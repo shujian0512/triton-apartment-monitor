@@ -167,12 +167,23 @@ async function checkOnce() {
       const isNewPlan = !previousSnapshot;
 
       // Determine if we should notify (only for plans in notifyFloorPlans)
-      const shouldNotify = config.apartment.notifyFloorPlans.some(notifyPlan =>
-        floorPlanName.toLowerCase().includes(notifyPlan.toLowerCase().split('(')[0].trim())
-      ) && (
+      const isInNotifyList = config.apartment.notifyFloorPlans.some(notifyPlan => {
+        const pattern = notifyPlan.toLowerCase().split('(')[0].trim();
+        const planName = floorPlanName.toLowerCase();
+        // Match if the notify pattern is contained in the floor plan name
+        // This allows "Plan 1B" to match "Plan 1B" or "1B" to match "Plan 1B"
+        return planName.includes(pattern) || pattern.includes(planName);
+      });
+
+      const shouldNotify = isInNotifyList && (
         (statusChanged && isAvailable) || // Changed from unavailable to available
         (isNewPlan && isAvailable) // First time seeing this plan and it's available
       );
+
+      // Debug logging
+      if (isAvailable && !isInNotifyList) {
+        console.log(`  ⓘ "${floorPlanName}" is available but not in notify list`);
+      }
 
       if (shouldNotify) {
         plansToNotify.push(planStatus);
