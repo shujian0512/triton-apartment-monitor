@@ -290,7 +290,7 @@
               </td>
               <td>4</td>
               <td>4 Units Available</td>
-              <td>03/06, 01:02 PM</td>
+              <td>03/06, 09:02 PM</td>
             </tr>
           
             <tr>
@@ -362,7 +362,7 @@
               </td>
               <td>-</td>
               <td>Not Available</td>
-              <td>03/06, 01:02 PM</td>
+              <td>03/06, 09:02 PM</td>
             </tr>
           
             <tr>
@@ -374,7 +374,7 @@
               </td>
               <td>-</td>
               <td>Not Available</td>
-              <td>03/06, 01:02 PM</td>
+              <td>03/06, 09:02 PM</td>
             </tr>
           
             <tr>
@@ -386,7 +386,7 @@
               </td>
               <td>-</td>
               <td>Not Available</td>
-              <td>03/06, 01:02 PM</td>
+              <td>03/06, 09:02 PM</td>
             </tr>
           
             <tr>
@@ -398,7 +398,7 @@
               </td>
               <td>-</td>
               <td>Not Available</td>
-              <td>03/06, 01:02 PM</td>
+              <td>03/06, 09:02 PM</td>
             </tr>
           
             <tr>
@@ -410,7 +410,7 @@
               </td>
               <td>-</td>
               <td>Not Available</td>
-              <td>03/06, 01:02 PM</td>
+              <td>03/06, 09:02 PM</td>
             </tr>
           
             <tr>
@@ -592,7 +592,7 @@
 
   <script>
     // Chart data
-    const chartData = {"availabilityTimeline":{"labels":["03/06","03/07"],"datasets":[{"label":"Plan 1A","data":[14,34],"borderColor":"rgb(75, 192, 192)","backgroundColor":"rgba(75, 192, 192, 0.2)"},{"label":"Plan 1B","data":[13,34],"borderColor":"rgb(255, 99, 132)","backgroundColor":"rgba(255, 99, 132, 0.2)"},{"label":"Plan 1Ba","data":[13,34],"borderColor":"rgb(54, 162, 235)","backgroundColor":"rgba(54, 162, 235, 0.2)"},{"label":"Plan 3A","data":[13,34],"borderColor":"rgb(255, 206, 86)","backgroundColor":"rgba(255, 206, 86, 0.2)"},{"label":"Plan SC","data":[13,34],"borderColor":"rgb(153, 102, 255)","backgroundColor":"rgba(153, 102, 255, 0.2)"}]},"unitCountDistribution":{"labels":["Plan 1A","Plan 1B","Plan 1Ba","Plan 2G Loft","Plan 3A","Plan 3C","Plan SC"],"data":[1,4,1,1,1,1,1]},"statusChanges":{"labels":[],"data":[]}};
+    const chartData = {"availabilityTimeline":{"labels":["03/01","03/02","03/03","03/04","03/05","03/06","03/07"],"datasets":[{"label":"Plan 1B","data":[null,null,null,null,null,4,null],"borderColor":"rgb(75, 192, 192)","backgroundColor":"rgba(75, 192, 192, 0.2)","spanGaps":true},{"label":"Plan 1A","data":[null,null,null,null,null,1,null],"borderColor":"rgb(255, 99, 132)","backgroundColor":"rgba(255, 99, 132, 0.2)","spanGaps":true},{"label":"Plan 1Ba","data":[null,null,null,null,null,1,null],"borderColor":"rgb(54, 162, 235)","backgroundColor":"rgba(54, 162, 235, 0.2)","spanGaps":true},{"label":"Plan 3A","data":[null,null,null,null,null,1,null],"borderColor":"rgb(255, 206, 86)","backgroundColor":"rgba(255, 206, 86, 0.2)","spanGaps":true},{"label":"Plan SC","data":[null,null,null,null,null,1,null],"borderColor":"rgb(153, 102, 255)","backgroundColor":"rgba(153, 102, 255, 0.2)","spanGaps":true}]},"unitCountDistribution":{"labels":["Plan 1A","Plan 1B","Plan 1Ba","Plan 2G Loft","Plan 3A","Plan 3C","Plan SC"],"data":[1,4,1,1,1,1,1]},"statusChanges":{"labels":[],"data":[]}};
 
     // Availability Timeline Chart
     new Chart(document.getElementById('availabilityChart'), {
@@ -611,6 +611,10 @@
             beginAtZero: true,
             ticks: {
               stepSize: 1
+            },
+            title: {
+              display: true,
+              text: 'Available Units'
             }
           }
         }

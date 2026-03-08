@@ -23,12 +23,13 @@ interface DashboardData {
   chartData: {
     availabilityTimeline: {
       labels: string[];
-      datasets: Array<{
+      datasets: {
         label: string;
-        data: number[];
+        data: (number | null)[];
         borderColor: string;
         backgroundColor: string;
-      }>;
+        spanGaps: boolean;
+      }[];
     };
     unitCountDistribution: {
       labels: string[];
@@ -131,8 +132,20 @@ function generateDashboardData(): DashboardData | null {
 }
 
 function generateAvailabilityTimeline(history: HistoryRecord[]) {
-  // Group by date and plan
-  const dateMap: { [date: string]: { [plan: string]: number } } = {};
+  // Build last 7 days as fixed labels so gaps show up
+  const dates: string[] = [];
+  for (let i = 6; i >= 0; i--) {
+    const d = new Date();
+    d.setDate(d.getDate() - i);
+    dates.push(d.toLocaleDateString('en-US', {
+      timeZone: 'America/Los_Angeles',
+      month: '2-digit',
+      day: '2-digit',
+    }));
+  }
+
+  // Group by date and plan: keep last recorded unitCount per day
+  const dateMap: { [date: string]: { [plan: string]: number | null } } = {};
 
   for (const record of history) {
     const date = new Date(record.timestamp).toLocaleDateString('en-US', {
@@ -145,27 +158,19 @@ function generateAvailabilityTimeline(history: HistoryRecord[]) {
       dateMap[date] = {};
     }
 
-    if (!dateMap[date][record.floorPlanName]) {
-      dateMap[date][record.floorPlanName] = 0;
-    }
-
-    if (record.isAvailable) {
-      dateMap[date][record.floorPlanName]++;
-    }
+    // Later records overwrite earlier ones — keeps the most recent value for that day
+    dateMap[date][record.floorPlanName] = record.isAvailable ? (record.unitCount ?? null) : 0;
   }
 
-  // Get unique dates sorted
-  const dates = Object.keys(dateMap).sort();
-
-  // Get top 5 most frequently available plans for the chart
-  const planAvailability: { [plan: string]: number } = {};
+  // Pick top 5 plans by max units seen across all history
+  const planMaxUnits: { [plan: string]: number } = {};
   for (const record of history) {
-    if (record.isAvailable) {
-      planAvailability[record.floorPlanName] = (planAvailability[record.floorPlanName] || 0) + 1;
+    if (record.isAvailable && record.unitCount !== null) {
+      planMaxUnits[record.floorPlanName] = Math.max(planMaxUnits[record.floorPlanName] || 0, record.unitCount);
     }
   }
 
-  const topPlans = Object.entries(planAvailability)
+  const topPlans = Object.entries(planMaxUnits)
     .sort((a, b) => b[1] - a[1])
     .slice(0, 5)
     .map(([plan]) => plan);
@@ -181,9 +186,10 @@ function generateAvailabilityTimeline(history: HistoryRecord[]) {
 
   const datasets = topPlans.map((plan, i) => ({
     label: plan,
-    data: dates.map(date => dateMap[date][plan] || 0),
+    data: dates.map(date => (dateMap[date] !== undefined ? (dateMap[date][plan] ?? null) : null)),
     borderColor: colors[i].border,
     backgroundColor: colors[i].bg,
+    spanGaps: true,
   }));
 
   return {
@@ -541,6 +547,10 @@ function generateHTML(data: DashboardData): string {
             beginAtZero: true,
             ticks: {
               stepSize: 1
+            },
+            title: {
+              display: true,
+              text: 'Available Units'
             }
           }
         }
