@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-03-19T01:58:33.843Z",
-  "totalChecks": 8299,
+  "generatedAt": "2026-03-19T04:26:48.237Z",
+  "totalChecks": 8325,
   "dateRange": {
     "start": "2026-03-07T05:08:06.456Z",
-    "end": "2026-03-19T01:58:33.809Z"
+    "end": "2026-03-19T04:26:48.205Z"
   },
   "floorPlans": {
     "Plan 1A": {
@@ -15,7 +15,7 @@
         "lastStatusChange": "2026-03-10T17:44:05.099Z"
       },
       "history": {
-        "totalChecks": 320,
+        "totalChecks": 321,
         "availabilityChanges": 1,
         "averageUnitsWhenAvailable": 1,
         "maxUnitsAvailable": 1,
@@ -29,15 +29,15 @@
     },
     "Plan 1B": {
       "currentStatus": {
-        "isAvailable": true,
-        "unitCount": 2,
+        "isAvailable": false,
+        "unitCount": null,
         "price": null,
-        "availabilityText": "2 Units Available",
-        "lastStatusChange": "03/06/2026, 21:02:16"
+        "availabilityText": "Not Available",
+        "lastStatusChange": "2026-03-19T04:26:48.204Z"
       },
       "history": {
-        "totalChecks": 319,
-        "availabilityChanges": 0,
+        "totalChecks": 320,
+        "availabilityChanges": 1,
         "averageUnitsWhenAvailable": 2.9310344827586206,
         "maxUnitsAvailable": 4,
         "minUnitsAvailable": 2,
@@ -50,15 +50,15 @@
     },
     "Plan 1Ba": {
       "currentStatus": {
-        "isAvailable": true,
-        "unitCount": 1,
+        "isAvailable": false,
+        "unitCount": null,
         "price": null,
-        "availabilityText": "1 Unit Available",
-        "lastStatusChange": "2026-03-07T05:08:06.456Z"
+        "availabilityText": "Not Available",
+        "lastStatusChange": "2026-03-19T04:26:48.204Z"
       },
       "history": {
-        "totalChecks": 319,
-        "availabilityChanges": 0,
+        "totalChecks": 320,
+        "availabilityChanges": 1,
         "averageUnitsWhenAvailable": 1,
         "maxUnitsAvailable": 1,
         "minUnitsAvailable": 1,
@@ -78,7 +78,7 @@
         "lastStatusChange": "2026-03-13T20:38:48.012Z"
       },
       "history": {
-        "totalChecks": 319,
+        "totalChecks": 320,
         "availabilityChanges": 1,
         "averageUnitsWhenAvailable": 1,
         "maxUnitsAvailable": 1,
@@ -92,15 +92,15 @@
     },
     "Plan SC": {
       "currentStatus": {
-        "isAvailable": true,
-        "unitCount": 1,
+        "isAvailable": false,
+        "unitCount": null,
         "price": null,
-        "availabilityText": "1 Unit Available 03/27/2026",
-        "lastStatusChange": "2026-03-07T05:08:06.456Z"
+        "availabilityText": "Not Available",
+        "lastStatusChange": "2026-03-19T04:26:48.204Z"
       },
       "history": {
-        "totalChecks": 319,
-        "availabilityChanges": 0,
+        "totalChecks": 320,
+        "availabilityChanges": 1,
         "averageUnitsWhenAvailable": 1,
         "maxUnitsAvailable": 1,
         "minUnitsAvailable": 1,
@@ -113,15 +113,15 @@
     },
     "Plan 2G Loft": {
       "currentStatus": {
-        "isAvailable": true,
-        "unitCount": 1,
+        "isAvailable": false,
+        "unitCount": null,
         "price": null,
-        "availabilityText": "1 Unit Available 04/13/2026",
-        "lastStatusChange": "2026-03-07T05:08:06.456Z"
+        "availabilityText": "Not Available",
+        "lastStatusChange": "2026-03-19T04:26:48.205Z"
       },
       "history": {
-        "totalChecks": 319,
-        "availabilityChanges": 0,
+        "totalChecks": 320,
+        "availabilityChanges": 1,
         "averageUnitsWhenAvailable": 1,
         "maxUnitsAvailable": 1,
         "minUnitsAvailable": 1,
@@ -134,15 +134,15 @@
     },
     "Plan 3C": {
       "currentStatus": {
-        "isAvailable": true,
-        "unitCount": 1,
+        "isAvailable": false,
+        "unitCount": null,
         "price": null,
-        "availabilityText": "1 Unit Available 04/13/2026",
-        "lastStatusChange": "2026-03-07T05:08:06.456Z"
+        "availabilityText": "Not Available",
+        "lastStatusChange": "2026-03-19T04:26:48.205Z"
       },
       "history": {
-        "totalChecks": 319,
-        "availabilityChanges": 0,
+        "totalChecks": 320,
+        "availabilityChanges": 1,
         "averageUnitsWhenAvailable": 1,
         "maxUnitsAvailable": 1,
         "minUnitsAvailable": 1,
@@ -162,7 +162,7 @@
         "lastStatusChange": "03/06/2026, 21:02:16"
       },
       "history": {
-        "totalChecks": 320,
+        "totalChecks": 321,
         "availabilityChanges": 0,
         "averageUnitsWhenAvailable": null,
         "maxUnitsAvailable": null,
@@ -183,7 +183,7 @@
         "lastStatusChange": "03/06/2026, 21:02:16"
       },
       "history": {
-        "totalChecks": 320,
+        "totalChecks": 321,
         "availabilityChanges": 0,
         "averageUnitsWhenAvailable": null,
         "maxUnitsAvailable": null,
@@ -204,7 +204,7 @@
         "lastStatusChange": "03/06/2026, 21:02:16"
       },
       "history": {
-        "totalChecks": 320,
+        "totalChecks": 321,
         "availabilityChanges": 0,
         "averageUnitsWhenAvailable": null,
         "maxUnitsAvailable": null,
@@ -225,7 +225,7 @@
         "lastStatusChange": "03/06/2026, 21:02:16"
       },
       "history": {
-        "totalChecks": 320,
+        "totalChecks": 321,
         "availabilityChanges": 0,
         "averageUnitsWhenAvailable": null,
         "maxUnitsAvailable": null,
@@ -246,7 +246,7 @@
         "lastStatusChange": "2026-03-07T05:08:06.456Z"
       },
       "history": {
-        "totalChecks": 319,
+        "totalChecks": 320,
         "availabilityChanges": 0,
         "averageUnitsWhenAvailable": null,
         "maxUnitsAvailable": null,
@@ -267,7 +267,7 @@
         "lastStatusChange": "2026-03-07T05:08:06.456Z"
       },
       "history": {
-        "totalChecks": 319,
+        "totalChecks": 320,
         "availabilityChanges": 0,
         "averageUnitsWhenAvailable": null,
         "maxUnitsAvailable": null,
@@ -288,7 +288,7 @@
         "lastStatusChange": "2026-03-07T05:08:06.456Z"
       },
       "history": {
-        "totalChecks": 319,
+        "totalChecks": 320,
         "availabilityChanges": 0,
         "averageUnitsWhenAvailable": null,
         "maxUnitsAvailable": null,
@@ -302,15 +302,15 @@
     },
     "Plan 2A": {
       "currentStatus": {
-        "isAvailable": true,
-        "unitCount": 1,
+        "isAvailable": false,
+        "unitCount": null,
         "price": null,
-        "availabilityText": "1 Unit Available",
-        "lastStatusChange": "2026-03-09T17:44:53.288Z"
+        "availabilityText": "Not Available",
+        "lastStatusChange": "2026-03-19T04:26:48.204Z"
       },
       "history": {
-        "totalChecks": 319,
-        "availabilityChanges": 1,
+        "totalChecks": 320,
+        "availabilityChanges": 2,
         "averageUnitsWhenAvailable": 1,
         "maxUnitsAvailable": 1,
         "minUnitsAvailable": 1,
@@ -330,7 +330,7 @@
         "lastStatusChange": "2026-03-07T05:08:06.456Z"
       },
       "history": {
-        "totalChecks": 319,
+        "totalChecks": 320,
         "availabilityChanges": 0,
         "averageUnitsWhenAvailable": null,
         "maxUnitsAvailable": null,
@@ -351,7 +351,7 @@
         "lastStatusChange": "2026-03-07T05:08:06.456Z"
       },
       "history": {
-        "totalChecks": 319,
+        "totalChecks": 320,
         "availabilityChanges": 0,
         "averageUnitsWhenAvailable": null,
         "maxUnitsAvailable": null,
@@ -372,7 +372,7 @@
         "lastStatusChange": "2026-03-07T05:08:06.456Z"
       },
       "history": {
-        "totalChecks": 319,
+        "totalChecks": 320,
         "availabilityChanges": 0,
         "averageUnitsWhenAvailable": null,
         "maxUnitsAvailable": null,
@@ -393,7 +393,7 @@
         "lastStatusChange": "2026-03-07T05:08:06.456Z"
       },
       "history": {
-        "totalChecks": 319,
+        "totalChecks": 320,
         "availabilityChanges": 0,
         "averageUnitsWhenAvailable": null,
         "maxUnitsAvailable": null,
@@ -414,7 +414,7 @@
         "lastStatusChange": "2026-03-07T05:08:06.456Z"
       },
       "history": {
-        "totalChecks": 319,
+        "totalChecks": 320,
         "availabilityChanges": 0,
         "averageUnitsWhenAvailable": null,
         "maxUnitsAvailable": null,
@@ -435,7 +435,7 @@
         "lastStatusChange": "2026-03-07T05:08:06.456Z"
       },
       "history": {
-        "totalChecks": 319,
+        "totalChecks": 320,
         "availabilityChanges": 0,
         "averageUnitsWhenAvailable": null,
         "maxUnitsAvailable": null,
@@ -456,7 +456,7 @@
         "lastStatusChange": "2026-03-07T05:08:06.456Z"
       },
       "history": {
-        "totalChecks": 319,
+        "totalChecks": 320,
         "availabilityChanges": 0,
         "averageUnitsWhenAvailable": null,
         "maxUnitsAvailable": null,
@@ -477,7 +477,7 @@
         "lastStatusChange": "2026-03-07T05:08:06.456Z"
       },
       "history": {
-        "totalChecks": 319,
+        "totalChecks": 320,
         "availabilityChanges": 0,
         "averageUnitsWhenAvailable": null,
         "maxUnitsAvailable": null,
@@ -498,7 +498,7 @@
         "lastStatusChange": "2026-03-07T05:08:06.456Z"
       },
       "history": {
-        "totalChecks": 319,
+        "totalChecks": 320,
         "availabilityChanges": 0,
         "averageUnitsWhenAvailable": null,
         "maxUnitsAvailable": null,
@@ -519,7 +519,7 @@
         "lastStatusChange": "2026-03-07T05:08:06.456Z"
       },
       "history": {
-        "totalChecks": 319,
+        "totalChecks": 320,
         "availabilityChanges": 0,
         "averageUnitsWhenAvailable": null,
         "maxUnitsAvailable": null,
@@ -540,7 +540,7 @@
         "lastStatusChange": "2026-03-07T05:08:06.456Z"
       },
       "history": {
-        "totalChecks": 319,
+        "totalChecks": 320,
         "availabilityChanges": 0,
         "averageUnitsWhenAvailable": null,
         "maxUnitsAvailable": null,
