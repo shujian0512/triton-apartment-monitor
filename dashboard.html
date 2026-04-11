@@ -207,7 +207,7 @@
   <div class="container">
     <div class="header">
       <h1>🏠 Apartment Availability Dashboard</h1>
-      <p>Last updated: Friday, April 10, 2026 at 6:59 PM PT</p>
+      <p>Last updated: Friday, April 10, 2026 at 9:27 PM PT</p>
     </div>
 
     <div class="stats">
@@ -217,11 +217,11 @@
       </div>
       <div class="stat-card">
         <h3>Available</h3>
-        <div class="value" style="color: #10b981;">5</div>
+        <div class="value" style="color: #10b981;">0</div>
       </div>
       <div class="stat-card">
         <h3>Unavailable</h3>
-        <div class="value" style="color: #ef4444;">21</div>
+        <div class="value" style="color: #ef4444;">26</div>
       </div>
       <div class="stat-card">
         <h3>Notifications Sent</h3>
@@ -270,66 +270,6 @@
         <tbody id="plansTableBody">
           
             <tr>
-              <td><strong>Plan 1B</strong></td>
-              <td>
-                <span class="badge available">
-                  ✓ Available
-                </span>
-              </td>
-              <td>3</td>
-              <td>3 Units Available</td>
-              <td>04/07, 04:29 AM</td>
-            </tr>
-          
-            <tr>
-              <td><strong>Plan 1Ba</strong></td>
-              <td>
-                <span class="badge available">
-                  ✓ Available
-                </span>
-              </td>
-              <td>1</td>
-              <td>1 Unit Available</td>
-              <td>04/07, 04:29 AM</td>
-            </tr>
-          
-            <tr>
-              <td><strong>Plan 2A</strong></td>
-              <td>
-                <span class="badge available">
-                  ✓ Available
-                </span>
-              </td>
-              <td>1</td>
-              <td>1 Unit Available 05/16/2026</td>
-              <td>04/07, 04:29 AM</td>
-            </tr>
-          
-            <tr>
-              <td><strong>Plan 2G Loft</strong></td>
-              <td>
-                <span class="badge available">
-                  ✓ Available
-                </span>
-              </td>
-              <td>1</td>
-              <td>1 Unit Available 04/20/2026</td>
-              <td>04/07, 04:29 AM</td>
-            </tr>
-          
-            <tr>
-              <td><strong>Plan 3C</strong></td>
-              <td>
-                <span class="badge available">
-                  ✓ Available
-                </span>
-              </td>
-              <td>1</td>
-              <td>1 Unit Available 05/06/2026</td>
-              <td>04/07, 04:29 AM</td>
-            </tr>
-          
-            <tr>
               <td><strong>Plan 1A</strong></td>
               <td>
                 <span class="badge unavailable">
@@ -366,6 +306,18 @@
             </tr>
           
             <tr>
+              <td><strong>Plan 1B</strong></td>
+              <td>
+                <span class="badge unavailable">
+                  ✗ Unavailable
+                </span>
+              </td>
+              <td>-</td>
+              <td>Not Available</td>
+              <td>04/10, 09:27 PM</td>
+            </tr>
+          
+            <tr>
               <td><strong>Plan 1B Loft</strong></td>
               <td>
                 <span class="badge unavailable">
@@ -378,6 +330,18 @@
             </tr>
           
             <tr>
+              <td><strong>Plan 1Ba</strong></td>
+              <td>
+                <span class="badge unavailable">
+                  ✗ Unavailable
+                </span>
+              </td>
+              <td>-</td>
+              <td>Not Available</td>
+              <td>04/10, 09:27 PM</td>
+            </tr>
+          
+            <tr>
               <td><strong>Plan 1Ba Loft</strong></td>
               <td>
                 <span class="badge unavailable">
@@ -387,6 +351,18 @@
               <td>-</td>
               <td>Not Available</td>
               <td>03/06, 01:02 PM</td>
+            </tr>
+          
+            <tr>
+              <td><strong>Plan 2A</strong></td>
+              <td>
+                <span class="badge unavailable">
+                  ✗ Unavailable
+                </span>
+              </td>
+              <td>-</td>
+              <td>Not Available</td>
+              <td>04/10, 09:27 PM</td>
             </tr>
           
             <tr>
@@ -474,6 +450,18 @@
             </tr>
           
             <tr>
+              <td><strong>Plan 2G Loft</strong></td>
+              <td>
+                <span class="badge unavailable">
+                  ✗ Unavailable
+                </span>
+              </td>
+              <td>-</td>
+              <td>Not Available</td>
+              <td>04/10, 09:27 PM</td>
+            </tr>
+          
+            <tr>
               <td><strong>Plan 3A</strong></td>
               <td>
                 <span class="badge unavailable">
@@ -495,6 +483,18 @@
               <td>-</td>
               <td>Not Available</td>
               <td>03/06, 09:08 PM</td>
+            </tr>
+          
+            <tr>
+              <td><strong>Plan 3C</strong></td>
+              <td>
+                <span class="badge unavailable">
+                  ✗ Unavailable
+                </span>
+              </td>
+              <td>-</td>
+              <td>Not Available</td>
+              <td>04/10, 09:27 PM</td>
             </tr>
           
             <tr>
@@ -592,7 +592,7 @@
 
   <script>
     // Chart data
-    const chartData = {"availabilityTimeline":{"labels":["04/04","04/05","04/06","04/07","04/08","04/09","04/10"],"datasets":[{"label":"Plan 1B","data":[3,3,0,3,2,3,3],"borderColor":"rgb(75, 192, 192)","backgroundColor":"rgba(75, 192, 192, 0.2)","spanGaps":true},{"label":"Plan 1Ba","data":[1,1,0,1,1,1,1],"borderColor":"rgb(255, 99, 132)","backgroundColor":"rgba(255, 99, 132, 0.2)","spanGaps":true},{"label":"Plan 2B","data":[0,0,0,0,0,0,0],"borderColor":"rgb(54, 162, 235)","backgroundColor":"rgba(54, 162, 235, 0.2)","spanGaps":true},{"label":"Plan 2G Loft","data":[1,1,0,1,1,1,1],"borderColor":"rgb(255, 206, 86)","backgroundColor":"rgba(255, 206, 86, 0.2)","spanGaps":true},{"label":"Plan 3A","data":[1,1,0,1,0,0,0],"borderColor":"rgb(153, 102, 255)","backgroundColor":"rgba(153, 102, 255, 0.2)","spanGaps":true}]},"unitCountDistribution":{"labels":["Plan 1B","Plan 1Ba","Plan 2A","Plan 2G Loft","Plan 3C"],"data":[3,1,1,1,1]},"statusChanges":{"labels":["Plan 2A","Plan 1B","Plan 1Ba","Plan 2G Loft","Plan 3C","Plan 3A","Plan SC","Plan SA","Plan 2B","Plan 2F"],"data":[9,6,6,6,6,5,5,4,2,2]}};
+    const chartData = {"availabilityTimeline":{"labels":["04/04","04/05","04/06","04/07","04/08","04/09","04/10"],"datasets":[{"label":"Plan 1B","data":[3,3,0,3,2,3,0],"borderColor":"rgb(75, 192, 192)","backgroundColor":"rgba(75, 192, 192, 0.2)","spanGaps":true},{"label":"Plan 1Ba","data":[1,1,0,1,1,1,0],"borderColor":"rgb(255, 99, 132)","backgroundColor":"rgba(255, 99, 132, 0.2)","spanGaps":true},{"label":"Plan 2G Loft","data":[1,1,0,1,1,1,0],"borderColor":"rgb(54, 162, 235)","backgroundColor":"rgba(54, 162, 235, 0.2)","spanGaps":true},{"label":"Plan 3A","data":[1,1,0,1,0,0,0],"borderColor":"rgb(255, 206, 86)","backgroundColor":"rgba(255, 206, 86, 0.2)","spanGaps":true},{"label":"Plan 3C","data":[1,1,0,1,1,1,0],"borderColor":"rgb(153, 102, 255)","backgroundColor":"rgba(153, 102, 255, 0.2)","spanGaps":true}]},"unitCountDistribution":{"labels":[],"data":[]},"statusChanges":{"labels":["Plan 2A","Plan 1B","Plan 1Ba","Plan 2G Loft","Plan 3C","Plan 3A","Plan SC","Plan SA","Plan 2B","Plan 2F"],"data":[10,7,7,7,7,5,5,4,2,2]}};
 
     // Availability Timeline Chart
     new Chart(document.getElementById('availabilityChart'), {
