@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-04-12T09:11:26.169Z",
-  "totalChecks": 22001,
+  "generatedAt": "2026-04-12T10:06:04.467Z",
+  "totalChecks": 22027,
   "dateRange": {
     "start": "2026-03-07T05:08:06.456Z",
-    "end": "2026-04-12T09:11:26.112Z"
+    "end": "2026-04-12T10:06:04.414Z"
   },
   "floorPlans": {
     "Plan 1A": {
@@ -15,7 +15,7 @@
         "lastStatusChange": "2026-03-10T17:44:05.099Z"
       },
       "history": {
-        "totalChecks": 841,
+        "totalChecks": 842,
         "availabilityChanges": 1,
         "averageUnitsWhenAvailable": 1,
         "maxUnitsAvailable": 1,
@@ -36,9 +36,9 @@
         "lastStatusChange": "2026-04-11T11:27:57.341Z"
       },
       "history": {
-        "totalChecks": 843,
+        "totalChecks": 844,
         "availabilityChanges": 8,
-        "averageUnitsWhenAvailable": 2.6408364083640836,
+        "averageUnitsWhenAvailable": 2.6412776412776413,
         "maxUnitsAvailable": 4,
         "minUnitsAvailable": 2,
         "priceHistory": {
@@ -57,7 +57,7 @@
         "lastStatusChange": "2026-04-11T11:27:57.341Z"
       },
       "history": {
-        "totalChecks": 849,
+        "totalChecks": 850,
         "availabilityChanges": 8,
         "averageUnitsWhenAvailable": 1,
         "maxUnitsAvailable": 1,
@@ -78,7 +78,7 @@
         "lastStatusChange": "2026-04-09T04:37:46.783Z"
       },
       "history": {
-        "totalChecks": 846,
+        "totalChecks": 847,
         "availabilityChanges": 5,
         "averageUnitsWhenAvailable": 1,
         "maxUnitsAvailable": 1,
@@ -99,7 +99,7 @@
         "lastStatusChange": "2026-03-28T04:19:33.536Z"
       },
       "history": {
-        "totalChecks": 846,
+        "totalChecks": 847,
         "availabilityChanges": 5,
         "averageUnitsWhenAvailable": 1,
         "maxUnitsAvailable": 1,
@@ -120,7 +120,7 @@
         "lastStatusChange": "2026-04-11T11:27:57.345Z"
       },
       "history": {
-        "totalChecks": 846,
+        "totalChecks": 847,
         "availabilityChanges": 8,
         "averageUnitsWhenAvailable": 1,
         "maxUnitsAvailable": 1,
@@ -141,7 +141,7 @@
         "lastStatusChange": "2026-04-11T11:27:57.345Z"
       },
       "history": {
-        "totalChecks": 846,
+        "totalChecks": 847,
         "availabilityChanges": 8,
         "averageUnitsWhenAvailable": 1,
         "maxUnitsAvailable": 1,
@@ -162,7 +162,7 @@
         "lastStatusChange": "2026-04-12T09:11:26.111Z"
       },
       "history": {
-        "totalChecks": 853,
+        "totalChecks": 854,
         "availabilityChanges": 2,
         "averageUnitsWhenAvailable": 1,
         "maxUnitsAvailable": 1,
@@ -183,7 +183,7 @@
         "lastStatusChange": "03/06/2026, 21:02:16"
       },
       "history": {
-        "totalChecks": 847,
+        "totalChecks": 848,
         "availabilityChanges": 0,
         "averageUnitsWhenAvailable": null,
         "maxUnitsAvailable": null,
@@ -204,7 +204,7 @@
         "lastStatusChange": "03/06/2026, 21:02:16"
       },
       "history": {
-        "totalChecks": 847,
+        "totalChecks": 848,
         "availabilityChanges": 0,
         "averageUnitsWhenAvailable": null,
         "maxUnitsAvailable": null,
@@ -225,7 +225,7 @@
         "lastStatusChange": "03/06/2026, 21:02:16"
       },
       "history": {
-        "totalChecks": 847,
+        "totalChecks": 848,
         "availabilityChanges": 0,
         "averageUnitsWhenAvailable": null,
         "maxUnitsAvailable": null,
@@ -246,7 +246,7 @@
         "lastStatusChange": "2026-03-07T05:08:06.456Z"
       },
       "history": {
-        "totalChecks": 846,
+        "totalChecks": 847,
         "availabilityChanges": 0,
         "averageUnitsWhenAvailable": null,
         "maxUnitsAvailable": null,
@@ -267,7 +267,7 @@
         "lastStatusChange": "2026-03-07T05:08:06.456Z"
       },
       "history": {
-        "totalChecks": 846,
+        "totalChecks": 847,
         "availabilityChanges": 0,
         "averageUnitsWhenAvailable": null,
         "maxUnitsAvailable": null,
@@ -288,7 +288,7 @@
         "lastStatusChange": "2026-03-28T05:39:48.031Z"
       },
       "history": {
-        "totalChecks": 846,
+        "totalChecks": 847,
         "availabilityChanges": 4,
         "averageUnitsWhenAvailable": 1,
         "maxUnitsAvailable": 1,
@@ -309,7 +309,7 @@
         "lastStatusChange": "2026-04-11T11:27:57.341Z"
       },
       "history": {
-        "totalChecks": 846,
+        "totalChecks": 847,
         "availabilityChanges": 11,
         "averageUnitsWhenAvailable": 1,
         "maxUnitsAvailable": 1,
@@ -330,7 +330,7 @@
         "lastStatusChange": "2026-03-07T05:08:06.456Z"
       },
       "history": {
-        "totalChecks": 846,
+        "totalChecks": 847,
         "availabilityChanges": 0,
         "averageUnitsWhenAvailable": null,
         "maxUnitsAvailable": null,
@@ -351,7 +351,7 @@
         "lastStatusChange": "2026-04-04T04:24:26.624Z"
       },
       "history": {
-        "totalChecks": 846,
+        "totalChecks": 847,
         "availabilityChanges": 2,
         "averageUnitsWhenAvailable": 1,
         "maxUnitsAvailable": 1,
@@ -372,7 +372,7 @@
         "lastStatusChange": "2026-03-07T05:08:06.456Z"
       },
       "history": {
-        "totalChecks": 846,
+        "totalChecks": 847,
         "availabilityChanges": 0,
         "averageUnitsWhenAvailable": null,
         "maxUnitsAvailable": null,
@@ -393,7 +393,7 @@
         "lastStatusChange": "2026-03-07T05:08:06.456Z"
       },
       "history": {
-        "totalChecks": 846,
+        "totalChecks": 847,
         "availabilityChanges": 0,
         "averageUnitsWhenAvailable": null,
         "maxUnitsAvailable": null,
@@ -414,7 +414,7 @@
         "lastStatusChange": "2026-03-07T05:08:06.456Z"
       },
       "history": {
-        "totalChecks": 846,
+        "totalChecks": 847,
         "availabilityChanges": 0,
         "averageUnitsWhenAvailable": null,
         "maxUnitsAvailable": null,
@@ -435,7 +435,7 @@
         "lastStatusChange": "2026-03-07T05:08:06.456Z"
       },
       "history": {
-        "totalChecks": 846,
+        "totalChecks": 847,
         "availabilityChanges": 0,
         "averageUnitsWhenAvailable": null,
         "maxUnitsAvailable": null,
@@ -456,7 +456,7 @@
         "lastStatusChange": "2026-04-03T04:41:36.232Z"
       },
       "history": {
-        "totalChecks": 846,
+        "totalChecks": 847,
         "availabilityChanges": 2,
         "averageUnitsWhenAvailable": 1,
         "maxUnitsAvailable": 1,
@@ -477,7 +477,7 @@
         "lastStatusChange": "2026-03-07T05:08:06.456Z"
       },
       "history": {
-        "totalChecks": 846,
+        "totalChecks": 847,
         "availabilityChanges": 0,
         "averageUnitsWhenAvailable": null,
         "maxUnitsAvailable": null,
@@ -498,7 +498,7 @@
         "lastStatusChange": "2026-03-07T05:08:06.456Z"
       },
       "history": {
-        "totalChecks": 846,
+        "totalChecks": 847,
         "availabilityChanges": 0,
         "averageUnitsWhenAvailable": null,
         "maxUnitsAvailable": null,
@@ -519,7 +519,7 @@
         "lastStatusChange": "2026-03-07T05:08:06.456Z"
       },
       "history": {
-        "totalChecks": 846,
+        "totalChecks": 847,
         "availabilityChanges": 0,
         "averageUnitsWhenAvailable": null,
         "maxUnitsAvailable": null,
@@ -540,7 +540,7 @@
         "lastStatusChange": "2026-03-07T05:08:06.456Z"
       },
       "history": {
-        "totalChecks": 846,
+        "totalChecks": 847,
         "availabilityChanges": 0,
         "averageUnitsWhenAvailable": null,
         "maxUnitsAvailable": null,
