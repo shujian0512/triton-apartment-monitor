@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "lastCheckTime": "2026-04-29T21:57:09.264Z",
+  "lastCheckTime": "2026-04-29T22:57:33.094Z",
   "notificationCount": 9,
   "floorPlans": {
     "Plan 1B": {
@@ -10,7 +10,7 @@
       "price": null,
       "availabilityText": "2 Units Available",
       "lastStatusChange": "2026-04-11T11:27:57.341Z",
-      "lastChecked": "2026-04-29T21:57:09.264Z"
+      "lastChecked": "2026-04-29T22:57:33.094Z"
     },
     "Plan 2A": {
       "floorPlanName": "Plan 2A",
@@ -19,7 +19,7 @@
       "price": null,
       "availabilityText": "2 Units Available 05/06/2026",
       "lastStatusChange": "2026-04-11T11:27:57.341Z",
-      "lastChecked": "2026-04-29T21:57:09.264Z"
+      "lastChecked": "2026-04-29T22:57:33.094Z"
     },
     "Plan 1A Loft": {
       "floorPlanName": "Plan 1A Loft",
@@ -28,7 +28,7 @@
       "price": null,
       "availabilityText": "Not Available",
       "lastStatusChange": "2026-04-16T00:05:33.509Z",
-      "lastChecked": "2026-04-29T21:57:09.264Z"
+      "lastChecked": "2026-04-29T22:57:33.094Z"
     },
     "Plan 1Aa Loft": {
       "floorPlanName": "Plan 1Aa Loft",
@@ -37,7 +37,7 @@
       "price": null,
       "availabilityText": "Not Available",
       "lastStatusChange": "03/06/2026, 21:02:16",
-      "lastChecked": "2026-04-29T21:57:09.265Z"
+      "lastChecked": "2026-04-29T22:57:33.094Z"
     },
     "Plan 1B Loft": {
       "floorPlanName": "Plan 1B Loft",
@@ -46,7 +46,7 @@
       "price": null,
       "availabilityText": "Not Available",
       "lastStatusChange": "03/06/2026, 21:02:16",
-      "lastChecked": "2026-04-29T21:57:09.265Z"
+      "lastChecked": "2026-04-29T22:57:33.095Z"
     },
     "Plan 1Ba Loft": {
       "floorPlanName": "Plan 1Ba Loft",
@@ -55,7 +55,7 @@
       "price": null,
       "availabilityText": "Not Available",
       "lastStatusChange": "03/06/2026, 21:02:16",
-      "lastChecked": "2026-04-29T21:57:09.265Z"
+      "lastChecked": "2026-04-29T22:57:33.095Z"
     },
     "Plan 1A": {
       "floorPlanName": "Plan 1A",
@@ -64,7 +64,7 @@
       "price": null,
       "availabilityText": "Not Available",
       "lastStatusChange": "2026-03-10T17:44:05.099Z",
-      "lastChecked": "2026-04-29T21:57:09.264Z"
+      "lastChecked": "2026-04-29T22:57:33.094Z"
     },
     "Plan 1Ba": {
       "floorPlanName": "Plan 1Ba",
@@ -73,7 +73,7 @@
       "price": null,
       "availabilityText": "1 Unit Available",
       "lastStatusChange": "2026-04-11T11:27:57.341Z",
-      "lastChecked": "2026-04-29T21:57:09.264Z"
+      "lastChecked": "2026-04-29T22:57:33.094Z"
     },
     "Plan 3A": {
       "floorPlanName": "Plan 3A",
@@ -82,7 +82,7 @@
       "price": null,
       "availabilityText": "Not Available",
       "lastStatusChange": "2026-04-09T04:37:46.783Z",
-      "lastChecked": "2026-04-29T21:57:09.265Z"
+      "lastChecked": "2026-04-29T22:57:33.095Z"
     },
     "Plan SC": {
       "floorPlanName": "Plan SC",
@@ -91,7 +91,7 @@
       "price": null,
       "availabilityText": "Not Available",
       "lastStatusChange": "2026-03-28T04:19:33.536Z",
-      "lastChecked": "2026-04-29T21:57:09.265Z"
+      "lastChecked": "2026-04-29T22:57:33.095Z"
     },
     "Plan 2G Loft": {
       "floorPlanName": "Plan 2G Loft",
@@ -100,7 +100,7 @@
       "price": null,
       "availabilityText": "1 Unit Available 05/09/2026",
       "lastStatusChange": "2026-04-11T11:27:57.345Z",
-      "lastChecked": "2026-04-29T21:57:09.264Z"
+      "lastChecked": "2026-04-29T22:57:33.094Z"
     },
     "Plan 3C": {
       "floorPlanName": "Plan 3C",
@@ -109,7 +109,7 @@
       "price": null,
       "availabilityText": "1 Unit Available 05/09/2026",
       "lastStatusChange": "2026-04-11T11:27:57.345Z",
-      "lastChecked": "2026-04-29T21:57:09.264Z"
+      "lastChecked": "2026-04-29T22:57:33.094Z"
     },
     "Plan L/W B": {
       "floorPlanName": "Plan L/W B",
@@ -118,7 +118,7 @@
       "price": null,
       "availabilityText": "Not Available",
       "lastStatusChange": "2026-03-07T05:08:06.456Z",
-      "lastChecked": "2026-04-29T21:57:09.265Z"
+      "lastChecked": "2026-04-29T22:57:33.095Z"
     },
     "Plan L/W C": {
       "floorPlanName": "Plan L/W C",
@@ -127,7 +127,7 @@
       "price": null,
       "availabilityText": "Not Available",
       "lastStatusChange": "2026-03-07T05:08:06.456Z",
-      "lastChecked": "2026-04-29T21:57:09.265Z"
+      "lastChecked": "2026-04-29T22:57:33.095Z"
     },
     "Plan SA": {
       "floorPlanName": "Plan SA",
@@ -136,7 +136,7 @@
       "price": null,
       "availabilityText": "Not Available",
       "lastStatusChange": "2026-03-28T05:39:48.031Z",
-      "lastChecked": "2026-04-29T21:57:09.265Z"
+      "lastChecked": "2026-04-29T22:57:33.095Z"
     },
     "Plan 2A Loft": {
       "floorPlanName": "Plan 2A Loft",
@@ -145,7 +145,7 @@
       "price": null,
       "availabilityText": "Not Available",
       "lastStatusChange": "2026-03-07T05:08:06.456Z",
-      "lastChecked": "2026-04-29T21:57:09.265Z"
+      "lastChecked": "2026-04-29T22:57:33.095Z"
     },
     "Plan 2B": {
       "floorPlanName": "Plan 2B",
@@ -154,7 +154,7 @@
       "price": null,
       "availabilityText": "Not Available",
       "lastStatusChange": "2026-04-04T04:24:26.624Z",
-      "lastChecked": "2026-04-29T21:57:09.265Z"
+      "lastChecked": "2026-04-29T22:57:33.095Z"
     },
     "Plan 2B Loft": {
       "floorPlanName": "Plan 2B Loft",
@@ -163,7 +163,7 @@
       "price": null,
       "availabilityText": "Not Available",
       "lastStatusChange": "2026-03-07T05:08:06.456Z",
-      "lastChecked": "2026-04-29T21:57:09.265Z"
+      "lastChecked": "2026-04-29T22:57:33.095Z"
     },
     "Plan 2C": {
       "floorPlanName": "Plan 2C",
@@ -172,7 +172,7 @@
       "price": null,
       "availabilityText": "Not Available",
       "lastStatusChange": "2026-03-07T05:08:06.456Z",
-      "lastChecked": "2026-04-29T21:57:09.265Z"
+      "lastChecked": "2026-04-29T22:57:33.095Z"
     },
     "Plan 2D": {
       "floorPlanName": "Plan 2D",
@@ -181,7 +181,7 @@
       "price": null,
       "availabilityText": "Not Available",
       "lastStatusChange": "2026-03-07T05:08:06.456Z",
-      "lastChecked": "2026-04-29T21:57:09.265Z"
+      "lastChecked": "2026-04-29T22:57:33.095Z"
     },
     "Plan 2E": {
       "floorPlanName": "Plan 2E",
@@ -190,7 +190,7 @@
       "price": null,
       "availabilityText": "Not Available",
       "lastStatusChange": "2026-03-07T05:08:06.456Z",
-      "lastChecked": "2026-04-29T21:57:09.265Z"
+      "lastChecked": "2026-04-29T22:57:33.095Z"
     },
     "Plan 2F": {
       "floorPlanName": "Plan 2F",
@@ -199,7 +199,7 @@
       "price": null,
       "availabilityText": "Not Available",
       "lastStatusChange": "2026-04-03T04:41:36.232Z",
-      "lastChecked": "2026-04-29T21:57:09.265Z"
+      "lastChecked": "2026-04-29T22:57:33.095Z"
     },
     "Plan L/W A": {
       "floorPlanName": "Plan L/W A",
@@ -208,7 +208,7 @@
       "price": null,
       "availabilityText": "Not Available",
       "lastStatusChange": "2026-03-07T05:08:06.456Z",
-      "lastChecked": "2026-04-29T21:57:09.265Z"
+      "lastChecked": "2026-04-29T22:57:33.095Z"
     },
     "Plan 3B": {
       "floorPlanName": "Plan 3B",
@@ -217,7 +217,7 @@
       "price": null,
       "availabilityText": "Not Available",
       "lastStatusChange": "2026-03-07T05:08:06.456Z",
-      "lastChecked": "2026-04-29T21:57:09.265Z"
+      "lastChecked": "2026-04-29T22:57:33.095Z"
     },
     "Plan 3D": {
       "floorPlanName": "Plan 3D",
@@ -226,7 +226,7 @@
       "price": null,
       "availabilityText": "Not Available",
       "lastStatusChange": "2026-03-07T05:08:06.456Z",
-      "lastChecked": "2026-04-29T21:57:09.265Z"
+      "lastChecked": "2026-04-29T22:57:33.095Z"
     },
     "Plan 3D Loft": {
       "floorPlanName": "Plan 3D Loft",
@@ -235,7 +235,7 @@
       "price": null,
       "availabilityText": "Not Available",
       "lastStatusChange": "2026-03-07T05:08:06.456Z",
-      "lastChecked": "2026-04-29T21:57:09.265Z"
+      "lastChecked": "2026-04-29T22:57:33.095Z"
     }
   }
 }
