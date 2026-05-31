@@ -207,7 +207,7 @@
   <div class="container">
     <div class="header">
       <h1>🏠 Apartment Availability Dashboard</h1>
-      <p>Last updated: Saturday, May 30, 2026 at 4:03 PM PT</p>
+      <p>Last updated: Saturday, May 30, 2026 at 6:34 PM PT</p>
     </div>
 
     <div class="stats">
@@ -217,11 +217,11 @@
       </div>
       <div class="stat-card">
         <h3>Available</h3>
-        <div class="value" style="color: #10b981;">5</div>
+        <div class="value" style="color: #10b981;">4</div>
       </div>
       <div class="stat-card">
         <h3>Unavailable</h3>
-        <div class="value" style="color: #ef4444;">21</div>
+        <div class="value" style="color: #ef4444;">22</div>
       </div>
       <div class="stat-card">
         <h3>Notifications Sent</h3>
@@ -278,18 +278,6 @@
               </td>
               <td>1</td>
               <td>1 Unit Available</td>
-              <td>05/30, 04:20 AM</td>
-            </tr>
-          
-            <tr>
-              <td><strong>Plan 2F</strong></td>
-              <td>
-                <span class="badge available">
-                  ✓ Available
-                </span>
-              </td>
-              <td>1</td>
-              <td>1 Unit Available 07/07/2026</td>
               <td>05/30, 04:20 AM</td>
             </tr>
           
@@ -486,6 +474,18 @@
             </tr>
           
             <tr>
+              <td><strong>Plan 2F</strong></td>
+              <td>
+                <span class="badge unavailable">
+                  ✗ Unavailable
+                </span>
+              </td>
+              <td>-</td>
+              <td>Not Available</td>
+              <td>05/30, 06:34 PM</td>
+            </tr>
+          
+            <tr>
               <td><strong>Plan 3A</strong></td>
               <td>
                 <span class="badge unavailable">
@@ -592,7 +592,7 @@
 
   <script>
     // Chart data
-    const chartData = {"availabilityTimeline":{"labels":["05/24","05/25","05/26","05/27","05/28","05/29","05/30"],"datasets":[{"label":"Plan 1B","data":[1,1,1,1,1,0,0],"borderColor":"rgb(75, 192, 192)","backgroundColor":"rgba(75, 192, 192, 0.2)","spanGaps":true},{"label":"Plan 1Ba","data":[1,1,1,1,1,0,1],"borderColor":"rgb(255, 99, 132)","backgroundColor":"rgba(255, 99, 132, 0.2)","spanGaps":true},{"label":"Plan 2G Loft","data":[1,1,1,1,1,0,1],"borderColor":"rgb(54, 162, 235)","backgroundColor":"rgba(54, 162, 235, 0.2)","spanGaps":true},{"label":"Plan L/W A","data":[1,1,1,1,1,0,1],"borderColor":"rgb(255, 206, 86)","backgroundColor":"rgba(255, 206, 86, 0.2)","spanGaps":true},{"label":"Plan 3C","data":[1,1,1,1,1,0,1],"borderColor":"rgb(153, 102, 255)","backgroundColor":"rgba(153, 102, 255, 0.2)","spanGaps":true}]},"unitCountDistribution":{"labels":["Plan 1Ba","Plan 2F","Plan 2G Loft","Plan 3C","Plan L/W A"],"data":[1,1,1,1,1]},"statusChanges":{"labels":["Plan 2A","Plan 1Ba","Plan 2G Loft","Plan 3C","Plan 1B","Plan L/W A","Plan 3A","Plan SC","Plan 2F","Plan 1A Loft"],"data":[20,18,18,18,17,7,5,5,5,4]}};
+    const chartData = {"availabilityTimeline":{"labels":["05/24","05/25","05/26","05/27","05/28","05/29","05/30"],"datasets":[{"label":"Plan 1B","data":[1,1,1,1,1,0,0],"borderColor":"rgb(75, 192, 192)","backgroundColor":"rgba(75, 192, 192, 0.2)","spanGaps":true},{"label":"Plan 1Ba","data":[1,1,1,1,1,0,1],"borderColor":"rgb(255, 99, 132)","backgroundColor":"rgba(255, 99, 132, 0.2)","spanGaps":true},{"label":"Plan 2G Loft","data":[1,1,1,1,1,0,1],"borderColor":"rgb(54, 162, 235)","backgroundColor":"rgba(54, 162, 235, 0.2)","spanGaps":true},{"label":"Plan L/W A","data":[1,1,1,1,1,0,1],"borderColor":"rgb(255, 206, 86)","backgroundColor":"rgba(255, 206, 86, 0.2)","spanGaps":true},{"label":"Plan 3C","data":[1,1,1,1,1,0,1],"borderColor":"rgb(153, 102, 255)","backgroundColor":"rgba(153, 102, 255, 0.2)","spanGaps":true}]},"unitCountDistribution":{"labels":["Plan 1Ba","Plan 2G Loft","Plan 3C","Plan L/W A"],"data":[1,1,1,1]},"statusChanges":{"labels":["Plan 2A","Plan 1Ba","Plan 2G Loft","Plan 3C","Plan 1B","Plan L/W A","Plan 2F","Plan 3A","Plan SC","Plan 1A Loft"],"data":[20,18,18,18,17,7,6,5,5,4]}};
 
     // Availability Timeline Chart
     new Chart(document.getElementById('availabilityChart'), {
