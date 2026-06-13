@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-06-13T17:52:27.647Z",
+  "generatedAt": "2026-06-13T19:20:27.256Z",
   "totalChecks": 35620,
   "dateRange": {
-    "start": "2026-03-15T18:35:28.096Z",
-    "end": "2026-06-13T17:52:27.573Z"
+    "start": "2026-03-15T19:26:04.710Z",
+    "end": "2026-06-13T19:20:27.161Z"
   },
   "floorPlans": {
     "Plan 1B": {
@@ -17,7 +17,7 @@
       "history": {
         "totalChecks": 1338,
         "availabilityChanges": 20,
-        "averageUnitsWhenAvailable": 2.069153069153069,
+        "averageUnitsWhenAvailable": 2.0683760683760686,
         "maxUnitsAvailable": 3,
         "minUnitsAvailable": 1,
         "priceHistory": {
@@ -59,7 +59,7 @@
       "history": {
         "totalChecks": 1370,
         "availabilityChanges": 19,
-        "averageUnitsWhenAvailable": 1.4886260236578708,
+        "averageUnitsWhenAvailable": 1.489071038251366,
         "maxUnitsAvailable": 3,
         "minUnitsAvailable": 1,
         "priceHistory": {
